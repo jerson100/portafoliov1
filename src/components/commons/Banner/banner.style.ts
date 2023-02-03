@@ -110,6 +110,5 @@ export const BannerInfoStyle = styled.div`
 `;
 export const BannerImageStyle = styled.img`
   flex-grow: 1;
-  /* width: 80%;
-  margin: auto; */
+  max-width: 100%;
 `;
