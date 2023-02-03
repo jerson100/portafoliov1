@@ -7,6 +7,21 @@ export const BannerContainerStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
+  --width-star: 75px;
+  .bottom_stars {
+    background-image: url("/assets/img/structure02.png");
+    background-position: 80% 80%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 45px;
+    right: 34px;
+    content: "";
+    width: var(--width-star);
+    height: var(--width-star);
+    z-index: 1;
+  }
 `;
 
 export const BannerContentStyle = styled.div`
@@ -19,7 +34,13 @@ export const BannerContentStyle = styled.div`
 export const BannerInfoStyle = styled.div`
   text-align: center;
   span {
-    color: #cd2368;
+    color: ${({
+      theme: {
+        palette: {
+          common: { red },
+        },
+      },
+    }) => red};
   }
   p {
     font-size: 25px;

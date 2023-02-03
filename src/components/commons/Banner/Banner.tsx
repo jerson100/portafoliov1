@@ -20,6 +20,7 @@ const Banner = () => {
         </BannerInfoStyle>
         <BannerImageStyle src={jersonMobile} />
       </BannerContentStyle>
+      <div className="bottom_stars"></div>
     </BannerContainerStyle>
   );
 };

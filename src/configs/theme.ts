@@ -11,7 +11,8 @@ export const darkTheme = {
   background: "#999",
 };
 
-export const colors = {
-  primary: "#CD2368",
-  secondary: "",
+export const commonColors = {
+  red: "#CD2368",
+  white: "#fff",
+  black: "black",
 };
