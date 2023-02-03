@@ -33,6 +33,24 @@ export const BannerContentStyle = styled.div`
 
 export const BannerInfoStyle = styled.div`
   text-align: center;
+  position: relative;
+  --h-line: 5px;
+  &::before {
+    width: 120px;
+    height: var(--h-line);
+    content: "";
+    background: ${({
+      theme: {
+        palette: {
+          common: { red },
+        },
+      },
+    }) => red};
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(-1 * var(--h-line));
+  }
   span {
     color: ${({
       theme: {
@@ -42,9 +60,10 @@ export const BannerInfoStyle = styled.div`
       },
     }) => red};
   }
-  p {
+  p:first-child {
     font-size: 25px;
     margin-bottom: 1rem;
+    margin-top: 1rem;
   }
   h1 {
     font-size: 35px;
@@ -52,7 +71,6 @@ export const BannerInfoStyle = styled.div`
   }
   h1 + p {
     font-size: 20px;
-    margin-bottom: 0;
     color: #cd2368;
   }
 `;
