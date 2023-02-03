@@ -1,5 +1,6 @@
 import AppRouter from "./components/router/AppRouter";
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
+import ThemeConfig from "./configs/theme";
 
 const GlobalStyle = createGlobalStyle`
   *, *::before, *::after{
@@ -10,13 +11,23 @@ const GlobalStyle = createGlobalStyle`
     color: #fff
   }
 
+    body{
+        font-family: 'Inter', sans-serif;
+    }
+
 `;
 
+const theme = {
+  theme: "light",
+  colors: ThemeConfig.colors,
+};
 function App() {
   return (
     <>
-      <GlobalStyle />
-      <AppRouter />
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        <AppRouter />
+      </ThemeProvider>
     </>
   );
 }

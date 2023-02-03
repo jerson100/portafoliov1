@@ -1,9 +1,9 @@
-import React from "react";
+import Banner from "../../../components/commons/Banner";
 
 const HomeView = () => {
   return (
     <>
-      <div>home...</div>
+      <Banner />
     </>
   );
 };
