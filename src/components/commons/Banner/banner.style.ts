@@ -7,7 +7,6 @@ export const BannerContainerStyle = styled.div<
 >`
   min-height: 100vh;
   width: 100%;
-  padding: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,13 +41,21 @@ export const BannerContentStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: calc(55px + 1rem);
+  margin-top: 55px;
+  align-items: center;
+  text-align: center;
+  @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+    flex-direction: row;
+    text-align: left;
+    gap: 86px;
+  }
 `;
 
 export const BannerInfoStyle = styled.div`
-  text-align: center;
   position: relative;
+  flex-grow: 1;
   --h-line: 5px;
+  max-width: 336px;
   &::before {
     width: 120px;
     height: var(--h-line);
@@ -63,6 +70,10 @@ export const BannerInfoStyle = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+      left: 0;
+      transform: translateX(0);
+    }
     top: calc(-1 * var(--h-line));
   }
   span {
@@ -78,17 +89,27 @@ export const BannerInfoStyle = styled.div`
     font-size: 25px;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+      font-size: 35px;
+    }
   }
   h1 {
     font-size: 35px;
     margin-bottom: 1rem;
+    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+      font-size: 70px;
+    }
   }
   h1 + p {
     font-size: 20px;
     color: #cd2368;
+    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+      font-size: 28px;
+    }
   }
 `;
 export const BannerImageStyle = styled.img`
+  flex-grow: 1;
   /* width: 80%;
   margin: auto; */
 `;

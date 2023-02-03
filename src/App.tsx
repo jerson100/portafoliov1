@@ -24,6 +24,7 @@ body{
 function App() {
   const theme: DefaultTheme = {
     theme: "light",
+    breakpoints: ThemeConfig.breakpoints,
     palette: {
       common: ThemeConfig.commonColors,
     },

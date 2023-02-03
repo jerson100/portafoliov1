@@ -7,21 +7,24 @@ import {
 
 import jersonMobile from "../../../assets/img/png/jerson_mobile.png";
 import bgMobile from "../../../assets/img/svgs/arc_mobile.svg";
+import Container from "../Container";
 
 const Banner = () => {
   return (
     <BannerContainerStyle img={bgMobile}>
       {/* <Arc /> */}
-      <BannerContentStyle>
-        <BannerInfoStyle>
-          <p>
-            <span>Howdy,</span> I'm
-          </p>
-          <h1>Jerson Ramírez</h1>
-          <p>Frontend Developer</p>
-        </BannerInfoStyle>
-        <BannerImageStyle src={jersonMobile} />
-      </BannerContentStyle>
+      <Container>
+        <BannerContentStyle>
+          <BannerInfoStyle>
+            <p>
+              <span>Howdy,</span> I'm
+            </p>
+            <h1>Jerson Ramírez</h1>
+            <p>Frontend Developer</p>
+          </BannerInfoStyle>
+          <BannerImageStyle src={jersonMobile} />
+        </BannerContentStyle>
+      </Container>
       <div className="bottom_stars"></div>
     </BannerContainerStyle>
   );
