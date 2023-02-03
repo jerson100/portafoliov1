@@ -1,6 +1,10 @@
+import { HTMLProps } from "react";
 import styled from "styled-components";
+import { BannerContainerProps } from "../../../types";
 
-export const BannerContainerStyle = styled.div`
+export const BannerContainerStyle = styled.div<
+  HTMLProps<HTMLDivElement> & BannerContainerProps
+>`
   min-height: 100vh;
   width: 100%;
   padding: 1rem;
@@ -8,6 +12,9 @@ export const BannerContainerStyle = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  background-image: url(${(props) => props.img});
+  background-repeat: no-repeat;
+  background-size: 100% 150px;
   --width-star: 75px;
   .bottom_stars {
     background-image: url("/assets/img/structure02.png");
@@ -21,6 +28,13 @@ export const BannerContainerStyle = styled.div`
     width: var(--width-star);
     height: var(--width-star);
     z-index: 1;
+  }
+  .arc {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
   }
 `;
 

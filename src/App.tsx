@@ -11,12 +11,12 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     margin: 0;
     box-Sizing: border-box;
-    background-color: #1B1B1B;
     color: #fff
-  }
+}
 
-    body{
-        font-family: 'Inter', sans-serif;
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: #1B1B1B;
     }
 
 `;

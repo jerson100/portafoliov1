@@ -12,7 +12,6 @@ export const HeaderContainerStyle = styled.header`
   left: 0;
   width: 100%;
   z-index: 10000;
-  background-color: transparent;
 `;
 
 export const MenuBarContainerStyle = styled.div`
