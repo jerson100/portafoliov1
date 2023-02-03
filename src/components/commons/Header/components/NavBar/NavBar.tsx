@@ -1,9 +1,11 @@
 import MenuBar from "../../../MenuBar";
+import MobileMenuList from "../MobileMenuList";
 
 const NavBar = () => {
   return (
     <div>
-      <MenuBar />
+      {/* <MenuBar /> */}
+      <MobileMenuList />
     </div>
   );
 };
