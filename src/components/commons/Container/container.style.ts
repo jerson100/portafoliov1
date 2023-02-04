@@ -1,10 +1,6 @@
-import { HTMLProps } from "react";
 import styled from "styled-components";
-import { Size } from "../../../types";
 
-export const ContainerStyle = styled.div<
-  HTMLProps<HTMLDivElement> & { breakpoint: Size }
->`
+export const ContainerStyle = styled.div`
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;

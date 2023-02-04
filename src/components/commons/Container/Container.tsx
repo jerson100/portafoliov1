@@ -4,9 +4,9 @@ import { ContainerStyle } from "./container.style";
 
 const Container: FunctionComponent<PropsWithChildren & ContainerProps> = ({
   children,
-  size = "lg",
+  tam = "lg",
 }) => {
-  return <ContainerStyle breakpoint={size}>{children}</ContainerStyle>;
+  return <ContainerStyle>{children}</ContainerStyle>;
 };
 
 export default Container;
