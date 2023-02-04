@@ -1,6 +1,7 @@
+import { LogoProps } from "../../../types";
 import { LogoContainerStyle } from "./logo.style";
 
-const Logo = () => {
+const Logo = ({ tam = "normal", ...props }: LogoProps) => {
   return (
     <LogoContainerStyle
       width="40"
@@ -8,6 +9,8 @@ const Logo = () => {
       viewBox="0 0 40 44"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
+      tam={tam}
+      {...props}
     >
       <path
         d="M6.25085 6.70596L20 0.547861L33.7491 6.70596L39.4646 21.626L33.7491 36.5461L20 42.7042L6.25085 36.5461L0.535431 21.626L6.25085 6.70596Z"

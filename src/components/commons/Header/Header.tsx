@@ -5,7 +5,7 @@ import { HeaderContainerStyle } from "./header.style";
 const Header = () => {
   return (
     <HeaderContainerStyle>
-      <Logo />
+      <Logo tam="small" lg="normal" />
       <NavBar />
     </HeaderContainerStyle>
   );
