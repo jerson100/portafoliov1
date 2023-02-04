@@ -4,12 +4,14 @@ import {
 } from "./mobileMenuList.style";
 const MobileMenuList = () => {
   return (
-    <MobileMenuContainerStyle>
-      <MobileMenuItemStyle>About</MobileMenuItemStyle>
-      <MobileMenuItemStyle>Experiencie</MobileMenuItemStyle>
-      <MobileMenuItemStyle>Work</MobileMenuItemStyle>
-      <MobileMenuItemStyle>Contact</MobileMenuItemStyle>
-    </MobileMenuContainerStyle>
+    <nav>
+      <MobileMenuContainerStyle>
+        <MobileMenuItemStyle>About</MobileMenuItemStyle>
+        <MobileMenuItemStyle>Experiencie</MobileMenuItemStyle>
+        <MobileMenuItemStyle>Work</MobileMenuItemStyle>
+        <MobileMenuItemStyle>Contact</MobileMenuItemStyle>
+      </MobileMenuContainerStyle>
+    </nav>
   );
 };
 
