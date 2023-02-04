@@ -11,9 +11,9 @@ export const BannerContainerStyle = styled.div<
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: url(${(props) => props.img});
-  background-repeat: no-repeat;
-  background-size: 100% 150px;
+  //   background-image: url(${(props) => props.img});
+  //   background-repeat: no-repeat;
+  //   background-size: 100% 150px;
   --width-star: 75px;
   .bottom_stars {
     background-image: url("/assets/img/structure02.png");
