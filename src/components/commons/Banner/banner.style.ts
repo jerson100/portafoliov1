@@ -11,6 +11,19 @@ export const BannerContainerStyle = styled.div<
   justify-content: center;
   align-items: center;
   position: relative;
+  background: linear-gradient(180deg, #f97d9826, #1b1b1b);
+  background-size: 100% 50%;
+  /*
+  background: linear-gradient(180deg, #f97d9830, #1b1b1b);
+  background-size: 100% 20%;
+  */
+  /*background: rgb(249, 125, 152);
+  background: radial-gradient(
+    circle,
+    rgba(249, 125, 152, 1) 0%,
+    rgba(27, 27, 27, 1) 70%
+  );*/
+  background-repeat: no-repeat;
 
   --width-star: 75px;
   .bottom_stars {
