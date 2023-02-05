@@ -34,6 +34,9 @@ export const BannerContainerStyle = styled.div<
     object-fit: cover;
   }
 `;
+//   background-image: url(${(props) => props.img});
+//   background-repeat: no-repeat;
+//   background-size: 100% 150px;
 
 export const BannerContentStyle = styled.div`
   display: flex;

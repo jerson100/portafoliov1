@@ -7,7 +7,7 @@ const AppRouter = () => {
     <Router>
       <Routes>
         <Route path="/" element={<MainLayout />}>
-          <Route element={<HomeView />} />
+          <Route index element={<HomeView />} />
           <Route path="home" element={<HomeView />} />
         </Route>
       </Routes>
