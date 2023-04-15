@@ -4,7 +4,7 @@ import MobileMenuList from "../MobileMenuList";
 
 const NavBar = () => {
   const isDesktop = useMediaQuery("lg");
-  return <div>{isDesktop ? <MobileMenuList /> : <MenuBar />}</div>;
+  return <>{isDesktop ? <MobileMenuList /> : <MenuBar />}</>;
 };
 
 export default NavBar;

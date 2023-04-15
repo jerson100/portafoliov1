@@ -57,7 +57,7 @@ export function breakpointFn(
   for (let b of Object.keys(breakpoint) as BreakPoint[]) {
     ac += `
         @media screen and ${breakpoints[b].media} {
-            ${breakpoints[b]?.value}
+            ${breakpoint[b]}
         }
     `;
   }

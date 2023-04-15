@@ -23,7 +23,10 @@ const getMedia = (props: mediaProps): FlattenSimpleInterpolation => {
   let objB: BreakpoinObjectProps = {};
   for (let b of keys) {
     const size = props[b] as Size;
-    if (size !== undefined) objB[b] = `width: ${tams[size]};`;
+    if (size !== undefined)
+      objB[b] = `
+    width: ${tams[size]};
+    height: ${tams[size]}`;
   }
   return breakpointFn(objB);
 };
@@ -32,7 +35,7 @@ export const LogoContainerStyle = styled.svg<
   HTMLProps<SVGAElement> & LogoProps
 >`
   width: ${(props) => props.tam && tams[props.tam]};
-  height: auto;
+  height: ${(props) => props.tam && tams[props.tam]};
   ${(props) =>
     getMedia({
       xs: props.xs,

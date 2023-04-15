@@ -1,6 +1,7 @@
 import { HTMLProps } from "react";
 import styled from "styled-components";
 import { BannerContainerProps } from "../../../types";
+import { breakpointFn } from "../../../configs/breakpoint";
 
 export const BannerContainerStyle = styled.div<
   HTMLProps<HTMLDivElement> & BannerContainerProps
@@ -81,11 +82,12 @@ export const BannerInfoStyle = styled.div`
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
-      left: 0;
-      transform: translateX(0);
-    }
     top: calc(-1 * var(--h-line));
+    ${breakpointFn("lg")`
+        font-size: 35px;
+        left: 0;
+        transform: translateX(0);
+    `}
   }
   span {
     color: ${({
@@ -100,9 +102,9 @@ export const BannerInfoStyle = styled.div`
     font-size: 25px;
     margin-bottom: 1rem;
     margin-top: 1rem;
-    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
-      font-size: 35px;
-    }
+    ${breakpointFn("lg")`
+        font-size: 35px;
+    `}
   }
   h1 {
     font-size: 35px;
@@ -110,16 +112,17 @@ export const BannerInfoStyle = styled.div`
     margin-right: 0;
     margin-bottom: 1rem;
     margin-left: 0;
-    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
-      font-size: 70px;
-    }
+    ${breakpointFn("lg")`
+        font-size: 70px;   
+    `}
   }
   h1 + p {
     font-size: 20px;
+    margin: 0;
     color: #cd2368;
-    @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
-      font-size: 28px;
-    }
+    ${breakpointFn("lg")`
+        font-size: 28px;   
+    `}
   }
 `;
 export const BannerImageStyle = styled.img`

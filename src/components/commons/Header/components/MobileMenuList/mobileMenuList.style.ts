@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const MobileMenuContainerStyle = styled.ul`
@@ -6,7 +7,7 @@ export const MobileMenuContainerStyle = styled.ul`
   padding: 0;
   display: flex;
   gap: 1rem;
-  font-size: 14px;
+  font-size: 1rem;
 `;
 
 export const MobileMenuItemStyle = styled.li`
@@ -19,4 +20,9 @@ export const MobileMenuItemStyle = styled.li`
     font-size: 13px;
     font-weight: bold;
   }
+`;
+
+export const MobileMenuItemlinkStyle = styled(Link)`
+  color: inherit;
+  text-decoration: none;
 `;
