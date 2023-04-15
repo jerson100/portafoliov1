@@ -1,6 +1,10 @@
 import { HTMLProps } from "react";
-import styled from "styled-components";
-import { LogoProps, Size } from "../../../types";
+import styled, { FlattenSimpleInterpolation } from "styled-components";
+import { BreakPoint, LogoProps, Size } from "../../../types";
+import {
+  BreakpoinObjectProps,
+  breakpointFn,
+} from "../../../configs/breakpoint";
 
 const tams = {
   smaller: "",
@@ -10,37 +14,31 @@ const tams = {
   verybig: "",
 };
 
+type mediaProps = {
+  [key in BreakPoint]?: string;
+};
+
+const getMedia = (props: mediaProps): FlattenSimpleInterpolation => {
+  const keys = Object.keys(props) as BreakPoint[];
+  let objB: BreakpoinObjectProps = {};
+  for (let b of keys) {
+    const size = props[b] as Size;
+    if (size !== undefined) objB[b] = `width: ${tams[size]};`;
+  }
+  return breakpointFn(objB);
+};
+
 export const LogoContainerStyle = styled.svg<
   HTMLProps<SVGAElement> & LogoProps
 >`
   width: ${(props) => props.tam && tams[props.tam]};
   height: auto;
-  ${({ sm, theme }) =>
-    sm &&
-    `
-    @media screen and (${theme.breakpoints.sm.media}) {
-        width: ${tams[sm]};
-    }
-  `}
-  ${({ md, theme }) =>
-    md &&
-    `
-    @media screen and (${theme.breakpoints.md.media}) {
-        width: ${tams[md]};
-    }
-  `}
-  ${({ lg, theme }) =>
-    lg &&
-    `
-    @media screen and (${theme.breakpoints.lg.media}) {
-        width: ${tams[lg]};
-    }
-  `}
-  ${({ xl, theme }) =>
-    xl &&
-    `
-    @media screen and (${theme.breakpoints.xl.media}) {
-        width: ${tams[xl]};
-    }
-  `}
+  ${(props) =>
+    getMedia({
+      xs: props.xs,
+      sm: props.sm,
+      md: props.md,
+      lg: props.lg,
+      xl: props.xl,
+    })}
 `;

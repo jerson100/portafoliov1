@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { breakpoints } from "../configs/theme";
+import { breakpoints } from "../configs/breakpoint";
 import { BreakPoint } from "../types";
 
 const useMediaQuery = (query: BreakPoint): boolean => {

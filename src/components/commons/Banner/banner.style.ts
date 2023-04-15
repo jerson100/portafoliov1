@@ -47,9 +47,6 @@ export const BannerContainerStyle = styled.div<
     object-fit: cover;
   }
 `;
-//   background-image: url(${(props) => props.img});
-//   background-repeat: no-repeat;
-//   background-size: 100% 150px;
 
 export const BannerContentStyle = styled.div`
   display: flex;
@@ -109,7 +106,10 @@ export const BannerInfoStyle = styled.div`
   }
   h1 {
     font-size: 35px;
+    margin-top: 0;
+    margin-right: 0;
     margin-bottom: 1rem;
+    margin-left: 0;
     @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
       font-size: 70px;
     }
