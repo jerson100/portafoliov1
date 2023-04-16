@@ -23,14 +23,14 @@ const Header = () => {
           animate="show"
           variants={HeaderContainerVariants}
         >
-          <motion.div custom="-100%" variants={HeaderItemVariants}>
+          <motion.div custom="-20px" variants={HeaderItemVariants}>
             <Logo tam="small" lg="normal" />
           </motion.div>
           <motion.div custom={0} variants={HeaderItemScaleVariants}>
             <NavBar />
           </motion.div>
           <ResumeButtonContainerStyle
-            custom="-100%"
+            custom="-20px"
             variants={HeaderItemVariants}
           >
             <Button variant="outlined">Resumen</Button>

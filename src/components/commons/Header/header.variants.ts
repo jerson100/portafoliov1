@@ -21,7 +21,7 @@ export const HeaderItemScaleVariants: Variants = {
   hidden: (i) => ({
     // scale: i,
     opacity: 0,
-    y: 10,
+    y: 20,
     transition: {
       duration: 0.75,
       ease: "easeOut",
