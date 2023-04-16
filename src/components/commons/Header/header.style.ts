@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { breakpointFn } from "../../../configs/breakpoint";
+import { motion } from "framer-motion";
 
 export const HeaderContainerStyle = styled.header`
   position: fixed;
@@ -16,7 +17,7 @@ export const HeaderContainerStyle = styled.header`
 `}
 `;
 
-export const HeaderContentStyle = styled.div`
+export const HeaderContentStyle = styled(motion.div)`
   display: flex;
   justify-content: space-between;
   align-items: center;
