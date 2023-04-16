@@ -1,7 +1,12 @@
+import Button from "../Button/Button";
 import Container from "../Container/Container";
 import Logo from "../Logo";
 import NavBar from "./components/NavBar";
-import { HeaderContainerStyle, HeaderContentStyle } from "./header.style";
+import {
+  HeaderContainerStyle,
+  HeaderContentStyle,
+  ResumeButtonContainerStyle,
+} from "./header.style";
 
 const Header = () => {
   return (
@@ -10,6 +15,9 @@ const Header = () => {
         <HeaderContentStyle>
           <Logo tam="small" lg="normal" />
           <NavBar />
+          <ResumeButtonContainerStyle>
+            <Button variant="outlined">Resumen</Button>
+          </ResumeButtonContainerStyle>
         </HeaderContentStyle>
       </Container>
     </HeaderContainerStyle>

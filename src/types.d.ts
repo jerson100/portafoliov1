@@ -1,6 +1,8 @@
 import { breakpoints } from "./configs/breakpoint";
+import { commonColors } from "./configs/colors";
+import { HTMLAttributes } from "react";
 
-export type Color = "primary" | "secondary";
+export type Color = "primary" | "secondary" | "danger" | "default";
 export type BreakPoint = keyof typeof breakpoints;
 export type Size =
   | "smaller"
@@ -29,17 +31,21 @@ export interface LogoProps {
   xl?: Size;
 }
 
+export type ButtonVariants = "outlined" | "contained" | "link";
+
+export interface DefaultButtonProps extends HTMLAttributes<HTMLButtonElement> {
+  variant?: ButtonVariants;
+  size?: Size;
+  color?: Color;
+  disabled?: boolean;
+}
+
 export type mode = "light" | "dark";
 
 declare module "styled-components" {
   export interface DefaultTheme {
     palette: {
-      common: {
-        red: string;
-        white: string;
-        black: string;
-        yellow: string;
-      };
+      common: typeof commonColors;
       primary: string;
       secondary: string;
       text: {

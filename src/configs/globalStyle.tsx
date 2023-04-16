@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
         font-family: 'Inter', sans-serif;
         background-color: ${({ theme }) => theme.palette.background};
         color: ${({ theme }) => theme.palette.text.primary};
-        /* line-height: 1rem; */
+        line-height: 1.5;
         overflow-x: hidden;
     }
     @media screen and (min-width: 760px){

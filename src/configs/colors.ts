@@ -2,7 +2,9 @@ export const commonColors = {
   red: "#CD2368",
   white: "#fff",
   black: "black",
-  yellow: "FFCD1B",
+  yellow: "yellow",
+  lightRed: "#CD2368",
+  lightYellow: "#FFCD1B",
 };
 
 export const colors = {

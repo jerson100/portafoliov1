@@ -2,10 +2,11 @@ import {
   MobileMenuContainerStyle,
   MobileMenuItemStyle,
   MobileMenuItemlinkStyle,
+  MobileNavigationStyle,
 } from "./mobileMenuList.style";
 const MobileMenuList = () => {
   return (
-    <nav>
+    <MobileNavigationStyle>
       <MobileMenuContainerStyle>
         <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/about">About</MobileMenuItemlinkStyle>
@@ -24,7 +25,7 @@ const MobileMenuList = () => {
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
       </MobileMenuContainerStyle>
-    </nav>
+    </MobileNavigationStyle>
   );
 };
 

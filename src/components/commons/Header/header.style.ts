@@ -25,3 +25,10 @@ export const HeaderContentStyle = styled.div`
 export const MenuBarContainerStyle = styled.div`
   border: solid 1px blue;
 `;
+
+export const ResumeButtonContainerStyle = styled.div`
+  display: none;
+  ${breakpointFn("lg")`
+     display: block;
+  `}
+`;
