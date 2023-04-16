@@ -9,7 +9,12 @@ const MobileMenuList = () => {
     <MobileNavigationStyle>
       <MobileMenuContainerStyle>
         <MobileMenuItemStyle>
-          <MobileMenuItemlinkStyle to="/">Home</MobileMenuItemlinkStyle>
+          <MobileMenuItemlinkStyle
+            className={({ isActive }) => (isActive ? "active" : "")}
+            to="/"
+          >
+            Home
+          </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/about">About</MobileMenuItemlinkStyle>

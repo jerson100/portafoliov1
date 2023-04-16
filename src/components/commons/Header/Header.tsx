@@ -33,7 +33,7 @@ const Header = () => {
             custom="-20px"
             variants={HeaderItemVariants}
           >
-            <Button variant="outlined">Resumen</Button>
+            <Button variant="outlined">My Cv</Button>
           </ResumeButtonContainerStyle>
         </HeaderContentStyle>
       </Container>

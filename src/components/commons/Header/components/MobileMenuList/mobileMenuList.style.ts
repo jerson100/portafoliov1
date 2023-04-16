@@ -1,5 +1,5 @@
 import Color from "color";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const MobileMenuContainerStyle = styled.ul`
@@ -31,8 +31,15 @@ export const MobileNavigationStyle = styled.nav`
     Color(theme.palette.primary).alpha(0.1).rgb().toString()};
 `;
 
-export const MobileMenuItemlinkStyle = styled(Link)`
+export const MobileMenuItemlinkStyle = styled(NavLink)`
   color: inherit;
   text-decoration: none;
   display: inline-block;
+  transition: color 0.2s ease-out;
+  &:hover {
+    color: ${({ theme }) => theme.palette.common.lightYellow};
+  }
+  &.active {
+    color: ${({ theme }) => theme.palette.common.lightYellow};
+  }
 `;
