@@ -9,6 +9,9 @@ const MobileMenuList = () => {
     <MobileNavigationStyle>
       <MobileMenuContainerStyle>
         <MobileMenuItemStyle>
+          <MobileMenuItemlinkStyle to="/">Home</MobileMenuItemlinkStyle>
+        </MobileMenuItemStyle>
+        <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/about">About</MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
@@ -17,10 +20,12 @@ const MobileMenuList = () => {
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
-          <MobileMenuItemlinkStyle to="/works">Work</MobileMenuItemlinkStyle>
+          <MobileMenuItemlinkStyle to="/projects">
+            Projects
+          </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
-          <MobileMenuItemlinkStyle to="/contac">
+          <MobileMenuItemlinkStyle to="/contact">
             Contact
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>

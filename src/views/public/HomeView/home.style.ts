@@ -1,9 +1,10 @@
 import { HTMLProps } from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { BannerContainerProps } from "../../../types";
 import { breakpointFn } from "../../../configs/breakpoint";
 
-export const BannerContainerStyle = styled.div<
+export const BannerContainerStyle = styled(motion.main)<
   HTMLProps<HTMLDivElement> & BannerContainerProps
 >`
   min-height: 100vh;
@@ -12,11 +13,10 @@ export const BannerContainerStyle = styled.div<
   justify-content: center;
   align-items: center;
   position: relative;
-  background: linear-gradient(180deg, #f97d9826, #1b1b1b);
-  background-size: 100% 50%;
+  /*background: linear-gradient(180deg, #f97d9826, #1b1b1b);*/
   /*
-  background: linear-gradient(180deg, #f97d9830, #1b1b1b);
-  background-size: 100% 20%;
+    background: linear-gradient(180deg, #f97d9830, #1b1b1b);
+    background-size: 100% 20%;
   */
   /*background: rgb(249, 125, 152);
   background: radial-gradient(
@@ -56,39 +56,38 @@ export const BannerContentStyle = styled.div`
   margin-top: 55px;
   align-items: center;
   text-align: center;
-  @media screen and (${(props) => props.theme.breakpoints.lg.media}) {
+  ${breakpointFn("lg")`
     flex-direction: row;
     text-align: left;
     gap: 86px;
-  }
+  }`}
 `;
-
-export const BannerInfoStyle = styled.div`
-  position: relative;
-  flex-grow: 1;
+export const BannerLineStyle = styled(motion.div)`
   --h-line: 5px;
-  max-width: 336px;
-  &::before {
-    width: 120px;
-    height: var(--h-line);
-    content: "";
-    background: ${({
-      theme: {
-        palette: {
-          common: { red },
-        },
+  width: 120px;
+  height: var(--h-line);
+  content: "";
+  background: ${({
+    theme: {
+      palette: {
+        common: { red },
       },
-    }) => red};
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(-1 * var(--h-line));
-    ${breakpointFn("lg")`
+    },
+  }) => red};
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(-1 * var(--h-line));
+  ${breakpointFn("lg")`
         font-size: 35px;
         left: 0;
         transform: translateX(0);
     `}
-  }
+`;
+export const BannerInfoStyle = styled(motion.div)`
+  position: relative;
+  flex-grow: 1;
+  max-width: 336px;
   span {
     color: ${({
       theme: {
@@ -98,7 +97,7 @@ export const BannerInfoStyle = styled.div`
       },
     }) => red};
   }
-  p:first-child {
+  .first {
     font-size: 25px;
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -106,7 +105,7 @@ export const BannerInfoStyle = styled.div`
         font-size: 35px;
     `}
   }
-  h1 {
+  .name {
     font-size: 35px;
     margin-top: 0;
     margin-right: 0;
@@ -116,7 +115,7 @@ export const BannerInfoStyle = styled.div`
         font-size: 70px;   
     `}
   }
-  h1 + p {
+  .profile {
     font-size: 20px;
     margin: 0;
     color: #cd2368;
@@ -125,7 +124,7 @@ export const BannerInfoStyle = styled.div`
     `}
   }
 `;
-export const BannerImageStyle = styled.img`
+export const BannerImageStyle = styled(motion.img)`
   flex-grow: 1;
   max-width: 100%;
 `;

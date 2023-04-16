@@ -1,11 +1,9 @@
 import { FunctionComponent, PropsWithChildren } from "react";
-import Header from "../../commons/Header";
 import { Outlet } from "react-router-dom";
 
-const MainLayout: FunctionComponent<PropsWithChildren> = ({ children }) => {
+const MainLayout: FunctionComponent<PropsWithChildren> = () => {
   return (
     <>
-      <Header />
       <Outlet />
     </>
   );
