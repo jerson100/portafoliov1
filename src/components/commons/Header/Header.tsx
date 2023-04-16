@@ -29,11 +29,12 @@ const Header = () => {
           <motion.div custom={0} variants={HeaderItemScaleVariants}>
             <NavBar />
           </motion.div>
-          <motion.div custom="-100%" variants={HeaderItemVariants}>
-            <ResumeButtonContainerStyle>
-              <Button variant="outlined">Resumen</Button>
-            </ResumeButtonContainerStyle>
-          </motion.div>
+          <ResumeButtonContainerStyle
+            custom="-100%"
+            variants={HeaderItemVariants}
+          >
+            <Button variant="outlined">Resumen</Button>
+          </ResumeButtonContainerStyle>
         </HeaderContentStyle>
       </Container>
     </HeaderContainerStyle>

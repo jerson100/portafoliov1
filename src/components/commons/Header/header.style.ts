@@ -12,9 +12,10 @@ export const HeaderContainerStyle = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 55px;
+  backdrop-filter: blur(10px);
   ${breakpointFn("lg")`
     height: 80px;
-`}
+  `}
 `;
 
 export const HeaderContentStyle = styled(motion.div)`
@@ -27,7 +28,7 @@ export const MenuBarContainerStyle = styled.div`
   border: solid 1px blue;
 `;
 
-export const ResumeButtonContainerStyle = styled.div`
+export const ResumeButtonContainerStyle = styled(motion.div)`
   display: none;
   ${breakpointFn("lg")`
      display: block;

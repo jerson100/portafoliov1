@@ -18,7 +18,7 @@ export const BannerContainerVariants: Variants = {
   },
   exit: {
     opacity: 0,
-    background: "linear-gradient(180deg,#1b1b1b 100%,#f97d9826) 0",
+    background: "linear-gradient(180deg,#1b1b1b 100%,#f97d9826 0)",
     transition: {
       duration: 0.75,
       ease: "easeOut",

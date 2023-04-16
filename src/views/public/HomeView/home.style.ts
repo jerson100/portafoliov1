@@ -4,29 +4,14 @@ import { motion } from "framer-motion";
 import { BannerContainerProps } from "../../../types";
 import { breakpointFn } from "../../../configs/breakpoint";
 
-export const BannerContainerStyle = styled(motion.main)<
+export const BannerContainerStyle = styled(motion.div)<
   HTMLProps<HTMLDivElement> & BannerContainerProps
 >`
-  min-height: 100vh;
-  width: 100%;
+  --width-star: 75px;
+  min-height: inherit;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  /*background: linear-gradient(180deg, #f97d9826, #1b1b1b);*/
-  /*
-    background: linear-gradient(180deg, #f97d9830, #1b1b1b);
-    background-size: 100% 20%;
-  */
-  /*background: rgb(249, 125, 152);
-  background: radial-gradient(
-    circle,
-    rgba(249, 125, 152, 1) 0%,
-    rgba(27, 27, 27, 1) 70%
-  );*/
-  background-repeat: no-repeat;
-
-  --width-star: 75px;
   .bottom_stars {
     background-image: url("/assets/img/structure02.png");
     background-position: 80% 80%;
@@ -40,22 +25,24 @@ export const BannerContainerStyle = styled(motion.main)<
     height: var(--width-star);
     z-index: 1;
   }
+  /*
   .arc {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     object-fit: cover;
-  }
+  }*/
 `;
 
 export const BannerContentStyle = styled.div`
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-top: 55px;
   align-items: center;
   text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   ${breakpointFn("lg")`
     flex-direction: row;
     text-align: left;

@@ -15,7 +15,9 @@ const AppRouter = () => {
   return (
     <Router>
       <Header />
-      <Routers />
+      <MainLayout>
+        <Routers />
+      </MainLayout>
     </Router>
   );
 };

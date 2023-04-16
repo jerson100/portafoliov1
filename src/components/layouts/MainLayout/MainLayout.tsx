@@ -1,11 +1,14 @@
 import { FunctionComponent, PropsWithChildren } from "react";
-import { Outlet } from "react-router-dom";
+import {
+  MainLayoutContainerStyle,
+  MainLayoutContentStyle,
+} from "./mainLayout.style";
 
-const MainLayout: FunctionComponent<PropsWithChildren> = () => {
+const MainLayout: FunctionComponent<PropsWithChildren> = ({ children }) => {
   return (
-    <>
-      <Outlet />
-    </>
+    <MainLayoutContainerStyle>
+      <MainLayoutContentStyle>{children}</MainLayoutContentStyle>
+    </MainLayoutContainerStyle>
   );
 };
 
