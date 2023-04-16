@@ -112,6 +112,25 @@ export const BannerInfoStyle = styled(motion.div)`
   }
 `;
 export const BannerImageStyle = styled(motion.img)`
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  max-width: 257px;
+  ${breakpointFn("lg")`
+    max-width: 500px;
+  `}
+`;
+export const BannerBgStyle = styled(motion.img)`
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translateY(-50%);
+  z-index: 1;
+  width: 100%;
+`;
+export const BannerImagesStyle = styled(motion.div)`
   flex-grow: 1;
-  max-width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
 `;

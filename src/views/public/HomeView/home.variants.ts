@@ -42,34 +42,6 @@ export const BannerInfoVariants: Variants = {
   },
 };
 
-export const BannerImageVariants: Variants = {
-  hidden: {
-    y: -100,
-    opacity: 0,
-    transition: {
-      duration: 0.75,
-      ease: "easeOut",
-    },
-  },
-  show: {
-    y: 0,
-    opacity: 1,
-    transition: {
-      duration: 0.75,
-      ease: "easeOut",
-    },
-  },
-  exit: {
-    y: -100,
-    opacity: 0,
-    transition: {
-      delay: 0.75,
-      duration: 0.75,
-      ease: "easeOut",
-    },
-  },
-};
-
 export const BannerLineVariants: Variants = {
   hidden: {
     width: 0,
