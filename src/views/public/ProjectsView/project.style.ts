@@ -30,8 +30,14 @@ export const ProjetListStyle = styled(motion.div)`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin-bottom: 1rem;
 `;
 
 export const ProjectViewTitleStyle = styled(Typography)`
   margin-bottom: 2.5rem;
+`;
+
+export const ProjectButtonNextStyle = styled(motion.div)`
+  display: flex;
+  justify-content: center;
 `;

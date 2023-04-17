@@ -1,14 +1,16 @@
+import Button from "../../../components/commons/Button";
 import Container from "../../../components/commons/Container/Container";
 import Project from "../../../components/commons/Project/Project";
-import Typography from "../../../components/commons/Typography";
 import { projects } from "../../../services/project";
 import {
+  ProjectButtonNextStyle,
   ProjectContainerStyle,
   ProjectTitleStlye,
   ProjectViewTitleStyle,
   ProjetListStyle,
 } from "./project.style";
 import {
+  ProjectButtonVariants,
   ProjectContainerVariants,
   ProjectTitleVariants,
   ProjectViewContentVariants,
@@ -37,6 +39,15 @@ const ProjectsView = () => {
             />
           ))}
         </ProjetListStyle>
+        <ProjectButtonNextStyle
+          initial="hidden"
+          whileInView="show"
+          exit="exit"
+          viewport={{ once: true, amount: 0.8 }}
+          variants={ProjectButtonVariants}
+        >
+          <Button>Ver Más</Button>
+        </ProjectButtonNextStyle>
       </Container>
     </ProjectContainerStyle>
   );

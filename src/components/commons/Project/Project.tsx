@@ -46,9 +46,9 @@ const Project = ({
         <Typography>{description}</Typography>
 
         <ProjectButtonStyle>
-          <Button>Open App</Button>
+          <Button>Ver Aplicativo</Button>
           <Button variant="outlined" color="secondary">
-            View More
+            Ver Detalles
           </Button>
         </ProjectButtonStyle>
       </ProjectInfoStyle>

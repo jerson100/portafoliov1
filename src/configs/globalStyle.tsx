@@ -1,3 +1,4 @@
+import Color from "color";
 import { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
@@ -18,12 +19,13 @@ const GlobalStyle = createGlobalStyle`
             width: 10px;
         }
         *::-webkit-scrollbar-thumb {
-            background-color: rgba(158, 158, 157, 0.32);
-            outline: rgba(158, 158, 157, 0.32) solid 1px;
+            background-color: ${({ theme }) => theme.palette.primary};
+            outline: ${({ theme }) => theme.palette.primary} solid 1px;
             border-radius: 5px;
         }
         *::-webkit-scrollbar-track {
-            background-color: rgba(158, 158, 157, 0.32);
+            background-color: ${({ theme }) =>
+              Color(theme.palette.primary).alpha(0.3).rgb().string()}	;
         }
     }
 `;

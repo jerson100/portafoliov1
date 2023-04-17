@@ -18,6 +18,7 @@ export const ProjectContainerStyle = styled(motion.article)`
 export const ProjectInfoStyle = styled.div`
   padding: 1rem;
   order: 2;
+  flex: 1;
   ${breakpointFn("md")`
     order: 1;
     padding: 1.5rem;
@@ -28,6 +29,7 @@ export const ProjectTagContainerStyle = styled.div`
   display: flex;
   gap: 0.5rem;
   margin-bottom: 1rem;
+  flex-wrap: wrap;
 `;
 
 export const ProjectButtonStyle = styled.div`
@@ -38,9 +40,10 @@ export const ProjectButtonStyle = styled.div`
 export const ProjectImageContainerStyle = styled.div`
   min-height: 250px;
   height: 100%;
+  flex: 1;
   position: relative;
   order: 1;
-  ${breakpointFn("md")`min-height: 400px;order:2; flex: 0 0 50%;`};
+  ${breakpointFn("md")`min-height: 400px;order:2;`};
 `;
 
 export const ProjectImageStyle = styled.img`
