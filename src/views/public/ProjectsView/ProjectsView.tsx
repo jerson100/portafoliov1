@@ -1,3 +1,5 @@
+import Container from "../../../components/commons/Container/Container";
+import Typography from "../../../components/commons/Typography";
 import { ProjectContainerStyle, ProjectTitleStlye } from "./project.style";
 import {
   ProjectContainerVariants,
@@ -12,9 +14,14 @@ const ProjectsView = () => {
       exit="exit"
       variants={ProjectContainerVariants}
     >
-      <ProjectTitleStlye variants={ProjectTitleVariants}>
-        ProjectsView
-      </ProjectTitleStlye>
+      <Container>
+        <Typography component="h1" variant="h3">
+          <ProjectTitleStlye variants={ProjectTitleVariants}>
+            Projects
+          </ProjectTitleStlye>
+        </Typography>
+        <Typography>lorem</Typography>
+      </Container>
     </ProjectContainerStyle>
   );
 };

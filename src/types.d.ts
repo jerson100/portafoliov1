@@ -12,6 +12,14 @@ export type Size =
   | "verybig"
   | undefined;
 
+export type TypographyComponent = "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
+export type TypographyVariants = TypographyComponent;
+
+export type TypographyProps = {
+  variant?: TypographyVariants;
+  component?: TypographyComponent;
+} & HTMLAttributes<HTMLHeadingElement>;
+
 export interface BannerContainerProps {
   img?: string;
 }

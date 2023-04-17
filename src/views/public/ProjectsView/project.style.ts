@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 
 export const ProjectContainerStyle = styled(motion.div)`
   min-height: inherit;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding-top: 2rem;
 `;
 
-export const ProjectTitleStlye = styled(motion.h1)``;
+export const ProjectTitleStlye = styled(motion.span)`
+  display: inline-block;
+`;
