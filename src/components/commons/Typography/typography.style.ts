@@ -59,21 +59,13 @@ export const HeadingStyle = styled.p<
 >`
   font-size: ${({ variant }) => sizes[variant].xs};
   font-weight: ${({ component }) => (component === "p" ? "normal" : "700")};
-  margin-bottom: ${({ component }) => (component === "p" ? "1rem" : "1.3rem")};
+  margin-bottom: 1rem;
   margin-top: 0;
   color: inherit;
-  ${({ variant, component }) =>
+  ${({ variant }) =>
     breakpointFn({
-      sm: `font-size: ${sizes[variant].sm}; 
-        margin-bottom: ${component === "p" ? "1rem" : "1.4rem"};`,
-      md: `font-size: ${sizes[variant].md};margin-bottom: ${
-        component === "p" ? "1rem" : "1.5rem"
-      };`,
-      lg: `font-size: ${sizes[variant].lg};margin-bottom: ${
-        component === "p" ? "1rem" : "1.6rem"
-      };`,
-      xl: `font-size: ${sizes[variant].xl};margin-bottom: ${
-        component === "p" ? "1rem" : "1.7rem"
-      };`,
+      sm: `font-size: ${sizes[variant].sm};`,
+      md: `font-size: ${sizes[variant].md};`,
+      lg: `font-size: ${sizes[variant].lg};`,
     })}
 `;

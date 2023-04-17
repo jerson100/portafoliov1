@@ -1,9 +1,17 @@
 import Container from "../../../components/commons/Container/Container";
+import Project from "../../../components/commons/Project/Project";
 import Typography from "../../../components/commons/Typography";
-import { ProjectContainerStyle, ProjectTitleStlye } from "./project.style";
+import { projects } from "../../../services/project";
+import {
+  ProjectContainerStyle,
+  ProjectTitleStlye,
+  ProjectViewTitleStyle,
+  ProjetListStyle,
+} from "./project.style";
 import {
   ProjectContainerVariants,
   ProjectTitleVariants,
+  ProjectViewContentVariants,
 } from "./projects.variants";
 
 const ProjectsView = () => {
@@ -15,12 +23,20 @@ const ProjectsView = () => {
       variants={ProjectContainerVariants}
     >
       <Container>
-        <Typography component="h1" variant="h3">
+        <ProjectViewTitleStyle component="h1" variant="h2">
           <ProjectTitleStlye variants={ProjectTitleVariants}>
             Projects
           </ProjectTitleStlye>
-        </Typography>
-        <Typography>lorem</Typography>
+        </ProjectViewTitleStyle>
+        <ProjetListStyle variants={ProjectViewContentVariants}>
+          {projects.map((project, i) => (
+            <Project
+              {...project}
+              key={project._id}
+              direction={i % 2 == 0 ? 1 : -1}
+            />
+          ))}
+        </ProjetListStyle>
       </Container>
     </ProjectContainerStyle>
   );

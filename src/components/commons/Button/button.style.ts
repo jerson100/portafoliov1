@@ -88,11 +88,11 @@ const variants = {
 
 const sizes = {
   small: {
-    padding: "0.5rem 1rem",
+    padding: "0.2rem .55rem",
     fontSize: "0.75rem",
   },
   smaller: {
-    padding: "0.75rem 1.5rem",
+    padding: "0.25rem .75rem",
     fontSize: "1rem",
   },
   normal: {

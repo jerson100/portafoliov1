@@ -14,6 +14,7 @@ export const ProjectContainerVariants: Variants = {
     transition: {
       duration: 0.75,
       ease: "easeOut",
+      staggerChildren: 0.75,
     },
   },
   exit: {
@@ -23,6 +24,8 @@ export const ProjectContainerVariants: Variants = {
       duration: 0.75,
       ease: "easeOut",
       when: "afterChildren",
+      staggerChildren: 0.75,
+      staggerDirection: -1,
     },
   },
 };
@@ -43,6 +46,28 @@ export const ProjectTitleVariants: Variants = {
   exit: {
     opacity: 0,
     y: 100,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+    },
+  },
+};
+export const ProjectViewContentVariants: Variants = {
+  hidden: {
+    opacity: 0,
+    x: 100,
+  },
+  show: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 0.75,
+      ease: "easeOut",
+      staggerChildren: 5,
+    },
+  },
+  exit: {
+    opacity: 0,
     transition: {
       duration: 0.75,
       ease: "easeOut",

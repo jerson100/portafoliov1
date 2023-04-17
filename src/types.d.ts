@@ -50,6 +50,17 @@ export interface DefaultButtonProps extends HTMLAttributes<HTMLButtonElement> {
 
 export type mode = "light" | "dark";
 
+export interface IProject {
+  _id: string;
+  title: string;
+  createdAt: Date;
+  description: string;
+  image: string;
+  tags: string[];
+  source: string;
+  linkApp: string;
+}
+
 declare module "styled-components" {
   export interface DefaultTheme {
     palette: {
