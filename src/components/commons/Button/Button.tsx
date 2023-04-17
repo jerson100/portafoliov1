@@ -7,14 +7,26 @@ const Button = ({
   variant = "contained",
   color = "primary",
   disabled = false,
+  linkComponent = "button",
+  to = "",
+  target = "_self",
   ...restProps
-}: DefaultButtonProps) => {
+}:
+  | DefaultButtonProps & {
+      linkComponent?: any;
+      to?: string;
+      target?: "_self" | "_blank";
+    }) => {
+  console.log(target);
   return (
     <ButtonStyle
       disabled={disabled}
       color={color}
       variant={variant}
       size={size}
+      as={linkComponent == undefined ? "button" : linkComponent}
+      to={linkComponent == undefined ? "" : to}
+      target={target}
       {...restProps}
     >
       {children}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Button from "../../../components/commons/Button";
 import Container from "../../../components/commons/Container/Container";
 import Project from "../../../components/commons/Project/Project";
@@ -46,7 +47,13 @@ const ProjectsView = () => {
           viewport={{ once: true, amount: 0.8 }}
           variants={ProjectButtonVariants}
         >
-          <Button>Ver Más</Button>
+          <Button
+            linkComponent={Link}
+            to="https://github.com/jerson100"
+            target="_blank"
+          >
+            Ver Más
+          </Button>
         </ProjectButtonNextStyle>
       </Container>
     </ProjectContainerStyle>

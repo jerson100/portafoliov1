@@ -114,6 +114,7 @@ export const ButtonStyle = styled.button<
 >`
   outline: none;
   cursor: pointer;
+  text-decoration: none;
   transition: transform 0.15s ease-in-out, color 0.15s ease-in-out,
     background-color 0.15s ease-in-out, border-color 0.15s ease-in-out,
     box-shadow 0.15s ease-in-out;

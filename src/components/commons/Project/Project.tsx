@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { IProject } from "../../../types";
 import Button from "../Button/Button";
 import Typography from "../Typography/Typography";
@@ -46,8 +47,16 @@ const Project = ({
         <Typography>{description}</Typography>
 
         <ProjectButtonStyle>
-          <Button>Ver Aplicativo</Button>
-          <Button variant="outlined" color="secondary">
+          <Button linkComponent={Link} to={linkApp} target="_blank">
+            Ver Aplicativo
+          </Button>
+          <Button
+            variant="outlined"
+            color="secondary"
+            linkComponent={Link}
+            to={source}
+            target="_blank"
+          >
             Ver Detalles
           </Button>
         </ProjectButtonStyle>
