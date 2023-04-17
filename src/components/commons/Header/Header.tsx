@@ -13,6 +13,7 @@ import {
   HeaderItemScaleVariants,
   HeaderItemVariants,
 } from "./header.variants";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -33,7 +34,14 @@ const Header = () => {
             custom="-20px"
             variants={HeaderItemVariants}
           >
-            <Button variant="outlined">My Cv</Button>
+            <Button
+              variant="outlined"
+              linkComponent={Link}
+              to="assets/pdf/cv.pdf"
+              target="_blank"
+            >
+              Descargar Cv
+            </Button>
           </ResumeButtonContainerStyle>
         </HeaderContentStyle>
       </Container>

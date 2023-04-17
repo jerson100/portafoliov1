@@ -17,7 +17,6 @@ const Button = ({
       to?: string;
       target?: "_self" | "_blank";
     }) => {
-  console.log(target);
   return (
     <ButtonStyle
       disabled={disabled}

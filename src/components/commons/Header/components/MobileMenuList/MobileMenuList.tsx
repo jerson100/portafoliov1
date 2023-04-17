@@ -13,25 +13,27 @@ const MobileMenuList = () => {
             className={({ isActive }) => (isActive ? "active" : "")}
             to="/"
           >
-            Home
+            Inicio
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
-          <MobileMenuItemlinkStyle to="/about">About</MobileMenuItemlinkStyle>
+          <MobileMenuItemlinkStyle to="/about">
+            Acerca de
+          </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/experience">
-            Experiencie
+            Experiencia
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/projects">
-            Projects
+            Proyectos
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
         <MobileMenuItemStyle>
           <MobileMenuItemlinkStyle to="/contact">
-            Contact
+            Contacto
           </MobileMenuItemlinkStyle>
         </MobileMenuItemStyle>
       </MobileMenuContainerStyle>

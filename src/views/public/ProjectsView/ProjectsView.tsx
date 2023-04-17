@@ -28,7 +28,7 @@ const ProjectsView = () => {
       <Container>
         <ProjectViewTitleStyle component="h1" variant="h2">
           <ProjectTitleStlye variants={ProjectTitleVariants}>
-            Projects
+            Proyectos
           </ProjectTitleStlye>
         </ProjectViewTitleStyle>
         <ProjetListStyle variants={ProjectViewContentVariants}>
