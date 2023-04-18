@@ -69,10 +69,8 @@ export const projects: IProject[] = [
       "Light Mode",
       "Normal Mode",
     ],
-    source:
-      "https://github.com/jerson100/social-media-dashboard-with-theme-switcher-master",
-    linkApp:
-      "https://jerson100.github.io/social-media-dashboard-with-theme-switcher-master/",
+    source: "https://github.com/jerson100/twitto-frontend-reactjs",
+    linkApp: "https://twitto.netlify.app/",
   },
   {
     _id: "3",
