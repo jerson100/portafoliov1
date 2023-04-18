@@ -48,6 +48,33 @@ export const projects: IProject[] = [
     linkApp: "https://music-foxbel.netlify.app/canciones",
   },
   {
+    _id: "17",
+    title: "Twitto",
+    createdAt: new Date(),
+    description:
+      "Clon de twitter - Twitto, Por el momento solo se trabajó en la parte mobile",
+    image: "assets/img/projects/17.jpg",
+    tags: [
+      "React",
+      "Styled Components",
+      "Javascript",
+      "Bem",
+      "NodeJs",
+      "Jwt",
+      "Api",
+      "ExpressJs",
+      "MongoDb",
+      "Fetch",
+      "Dark Mode",
+      "Light Mode",
+      "Normal Mode",
+    ],
+    source:
+      "https://github.com/jerson100/social-media-dashboard-with-theme-switcher-master",
+    linkApp:
+      "https://jerson100.github.io/social-media-dashboard-with-theme-switcher-master/",
+  },
+  {
     _id: "3",
     title: "Real time Bookmarks",
     createdAt: new Date(),
@@ -237,33 +264,6 @@ export const projects: IProject[] = [
     description: "Social media dashboard with theme switcher",
     image: "assets/img/projects/16.jpg",
     tags: ["Html5", "Css3", "Javascript", "Bem", "Dark Mode", "Light Mode"],
-    source:
-      "https://github.com/jerson100/social-media-dashboard-with-theme-switcher-master",
-    linkApp:
-      "https://jerson100.github.io/social-media-dashboard-with-theme-switcher-master/",
-  },
-  {
-    _id: "17",
-    title: "Twitto",
-    createdAt: new Date(),
-    description:
-      "Clon de twitter - Twitto, Por el momento solo se trabajó en la parte mobile",
-    image: "assets/img/projects/17.jpg",
-    tags: [
-      "React",
-      "Styled Components",
-      "Javascript",
-      "Bem",
-      "NodeJs",
-      "Jwt",
-      "Api",
-      "ExpressJs",
-      "MongoDb",
-      "Fetch",
-      "Dark Mode",
-      "Light Mode",
-      "Normal Mode",
-    ],
     source:
       "https://github.com/jerson100/social-media-dashboard-with-theme-switcher-master",
     linkApp:
