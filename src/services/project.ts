@@ -31,6 +31,16 @@ export const projects: IProject[] = [
     linkApp: "https://search-pet.netlify.app/pets/lost",
   },
   {
+    _id: "1000",
+    title: "Shame",
+    createdAt: new Date(),
+    description: "Aplicación web que permite Compartir imágenes",
+    image: "assets/img/projects/18.jpg",
+    tags: ["React", "Sanity", "NodeJs", "Framer motion"],
+    source: "https://github.com/jerson100/Shame_frontend",
+    linkApp: "https://shame-sh.netlify.app/",
+  },
+  {
     _id: "2",
     title: "Foxbel Music",
     createdAt: new Date(),
