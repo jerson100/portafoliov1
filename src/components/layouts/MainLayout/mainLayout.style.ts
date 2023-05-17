@@ -6,6 +6,7 @@ export const MainLayoutContainerStyle = styled.div`
   width: 100%;
   position: relative;
   margin-top: 55px;
+  overflow-x: hidden;
   ${breakpointFn("lg")`
     margin-top: 80px;
     min-height: calc(100vh - 80px);

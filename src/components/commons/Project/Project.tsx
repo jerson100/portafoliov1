@@ -29,7 +29,7 @@ const Project = ({
       whileInView="show"
       exit="exit"
       custom={direction}
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.5 }}
       variants={ProjectContainerVariants}
     >
       <ProjectInfoStyle>
