@@ -4,7 +4,7 @@ import React from "react";
 interface LinkProps {
   to: string;
   children: React.ReactNode | React.ReactNode[];
-  onClick: () => void;
+  onClick?: () => void;
 }
 
 const Link = ({ to, children, onClick }: LinkProps) => {
