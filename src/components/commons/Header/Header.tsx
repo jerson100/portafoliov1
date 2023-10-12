@@ -40,6 +40,7 @@ const Header = () => {
               to="assets/pdf/cv.pdf"
               target="_blank"
               title="Descargar Cv"
+              aria-label="Descargar Cv"
             >
               Descargar Cv
             </Button>
