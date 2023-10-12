@@ -17,7 +17,7 @@ export const MenuToggle = ({ toggle }: { toggle: () => void }) => {
     toggle();
   };
   return (
-    <MenuToogleButtonStyle onClick={_handleToogle}>
+    <MenuToogleButtonStyle onClick={_handleToogle} aria-label="Menú">
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           variants={{
