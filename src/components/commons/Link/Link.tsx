@@ -1,15 +1,16 @@
+import { LinkProps } from "react-router-dom";
 import { LinkStyle } from "./link.style";
 import React from "react";
 
-interface LinkProps {
+interface LinkPropss extends LinkProps {
   to: string;
   children: React.ReactNode | React.ReactNode[];
   onClick?: () => void;
 }
 
-const Link = ({ to, children, onClick }: LinkProps) => {
+const Link = ({ to, children, onClick, ...props }: LinkPropss) => {
   return (
-    <LinkStyle to={to} onClick={onClick}>
+    <LinkStyle to={to} onClick={onClick} {...props}>
       {children}
     </LinkStyle>
   );

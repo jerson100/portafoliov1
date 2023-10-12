@@ -7,7 +7,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Aplicación web que permite ayudar a encontrar a las mascotas perdidas de los usuarios por medio de indicaciones, comentarios, chat en tiempo real, fotos, gps.",
-    image: "assets/img/projects/01.jpg",
+    image: "assets/img/projects/01.webp",
     tags: [
       "React",
       "Mui",
@@ -35,7 +35,7 @@ export const projects: IProject[] = [
     title: "Shame",
     createdAt: new Date(),
     description: "Aplicación web que permite Compartir imágenes",
-    image: "assets/img/projects/18.jpg",
+    image: "assets/img/projects/18.webp",
     tags: ["React", "Sanity", "NodeJs", "Framer motion"],
     source: "https://github.com/jerson100/Shame_frontend",
     linkApp: "https://shame-sh.netlify.app/",
@@ -46,7 +46,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Reproductor web de música con la posibilidad de buscar canciones, haciendo uso de la api de deezer",
-    image: "assets/img/projects/02.jpg",
+    image: "assets/img/projects/02.webp",
     tags: [
       "React",
       "Styled components",
@@ -63,7 +63,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Clon de twitter - Twitto, Por el momento solo se trabajó en la parte mobile",
-    image: "assets/img/projects/17.jpg",
+    image: "assets/img/projects/17.webp",
     tags: [
       "React",
       "Styled Components",
@@ -87,7 +87,7 @@ export const projects: IProject[] = [
     title: "Real time Bookmarks",
     createdAt: new Date(),
     description: "Arrastrar el marcador en el mapa en tiempo real",
-    image: "assets/img/projects/03.jpg",
+    image: "assets/img/projects/03.webp",
     tags: [
       "React",
       "Typescript",
@@ -105,7 +105,7 @@ export const projects: IProject[] = [
     title: "Tic tac toe",
     createdAt: new Date(),
     description: "Juego de Tic tac toe",
-    image: "assets/img/projects/04.jpg",
+    image: "assets/img/projects/04.webp",
     tags: ["React", "Typescript", "Styled components"],
     source: "https://github.com/jerson100/tic-tac-toe",
     linkApp: "https://tictatoe-react.netlify.app/",
@@ -115,7 +115,7 @@ export const projects: IProject[] = [
     title: "Menú Lateral",
     createdAt: new Date(),
     description: "Menú lateral responsive",
-    image: "assets/img/projects/05.jpg",
+    image: "assets/img/projects/05.webp",
     tags: ["Html5", "Css3", "Responsive Web Design", "Bem"],
     source: "https://github.com/jerson100/menu-lateral",
     linkApp: "https://lateralmenu.netlify.app/",
@@ -126,7 +126,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Ejercicio de frontend mentor consumiento la api de restcountries",
-    image: "assets/img/projects/06.jpg",
+    image: "assets/img/projects/06.webp",
     tags: [
       "React",
       "Api",
@@ -144,7 +144,7 @@ export const projects: IProject[] = [
     title: "Todo List",
     createdAt: new Date(),
     description: "Agregar, eliminar, editar y listar tareas",
-    image: "assets/img/projects/07.jpg",
+    image: "assets/img/projects/07.webp",
     tags: [
       "React",
       "Api",
@@ -164,7 +164,7 @@ export const projects: IProject[] = [
     title: "Gasto Semanal",
     createdAt: new Date(),
     description: "Aplicación para ver el gasto semanal",
-    image: "assets/img/projects/08.jpg",
+    image: "assets/img/projects/08.webp",
     tags: ["React", "sass", "Responsive Web Design"],
     source: "https://github.com/jerson100/gastoSemanalReatcJs",
     linkApp: "https://jerson100.github.io/gastoSemanalReatcJs/",
@@ -175,7 +175,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Diseño de un chat web para el curso de criptografía de la UNJFSC",
-    image: "assets/img/projects/09.jpg",
+    image: "assets/img/projects/09.webp",
     tags: ["Html5", "Css3", "Responsive Web Design", "Bem"],
     source: "https://github.com/jerson100/chat_with_css_html_js",
     linkApp: "https://jerson100.github.io/chat_with_css_html_js/",
@@ -185,7 +185,7 @@ export const projects: IProject[] = [
     title: "Fylo dark theme landing page",
     createdAt: new Date(),
     description: "Challenge frontend mentor sobre una landing page",
-    image: "assets/img/projects/10.jpg",
+    image: "assets/img/projects/10.webp",
     tags: [
       "Html5",
       "Css3",
@@ -203,7 +203,7 @@ export const projects: IProject[] = [
     createdAt: new Date(),
     description:
       "Challenge frontend mentor sobre shortly, acortador de url que usa de la api rel.ink",
-    image: "assets/img/projects/11.jpg",
+    image: "assets/img/projects/11.webp",
     tags: [
       "Html5",
       "Css3",
@@ -222,7 +222,7 @@ export const projects: IProject[] = [
     title: "GiftExpertApp",
     createdAt: new Date(),
     description: "Filtro de gifs, usando la api de giphy",
-    image: "assets/img/projects/12.jpg",
+    image: "assets/img/projects/12.webp",
     tags: [
       "Html5",
       "Css3",
@@ -240,7 +240,7 @@ export const projects: IProject[] = [
     title: "RandomImage",
     createdAt: new Date(),
     description: "Generar y mostrar imágenes en posiciones aleatorias",
-    image: "assets/img/projects/13.jpg",
+    image: "assets/img/projects/13.webp",
     tags: ["Html5", "Css3", "Javascript"],
     source: "https://github.com/jerson100/show-random-images.github.io",
     linkApp: "https://jerson100.github.io/show-random-images.github.io/",
@@ -250,7 +250,7 @@ export const projects: IProject[] = [
     title: "Bookmark landing page",
     createdAt: new Date(),
     description: "Challenge frontend mentor sobre una landing page - Bookmark",
-    image: "assets/img/projects/14.jpg",
+    image: "assets/img/projects/14.webp",
     tags: ["Html5", "Css3", "Javascript"],
     source: "https://github.com/jerson100/bookmark-landing-page-master",
     linkApp: "https://jerson100.github.io/bookmark-landing-page-master/",
@@ -260,7 +260,7 @@ export const projects: IProject[] = [
     title: "LibreApp",
     createdAt: new Date(),
     description: "Diseño de página de libros básico",
-    image: "assets/img/projects/15.jpg",
+    image: "assets/img/projects/15.webp",
     tags: ["Html5", "Css3", "Bem"],
     source: "https://github.com/jerson100/meet_localstorage",
     linkApp: "https://jerson100.github.io/meet_localstorage/",
@@ -270,7 +270,7 @@ export const projects: IProject[] = [
     title: "Social media",
     createdAt: new Date(),
     description: "Social media dashboard with theme switcher",
-    image: "assets/img/projects/16.jpg",
+    image: "assets/img/projects/16.webp",
     tags: ["Html5", "Css3", "Javascript", "Bem", "Dark Mode", "Light Mode"],
     source:
       "https://github.com/jerson100/social-media-dashboard-with-theme-switcher-master",

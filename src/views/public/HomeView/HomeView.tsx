@@ -15,7 +15,7 @@ import {
   VerticalVariants,
 } from "./home.variants";
 import bgCircle from "../../../assets/img/svgs/bg_circle.svg";
-import jerson from "../../../assets/img/png/jerson.png";
+import jerson from "../../../assets/img/png/jerson.webp";
 import Container from "../../../components/commons/Container/Container";
 
 const HomeView = () => {
@@ -40,7 +40,7 @@ const HomeView = () => {
               variants={VerticalVariants}
               className="first"
             >
-              <span>Howdy,</span> I'm
+              <span>Hi,</span> I'm
             </motion.p>
             <motion.h1
               custom={"50px"}
@@ -54,7 +54,7 @@ const HomeView = () => {
               variants={VerticalVariants}
               className="profile"
             >
-              Frontend Developer
+              Full Stack Developer
             </motion.p>
           </BannerInfoStyle>
           <BannerImagesStyle>
@@ -62,10 +62,16 @@ const HomeView = () => {
               src={bgCircle}
               custom="20px"
               variants={VerticalVariants}
+              alt="Círculo de fondo"
+              title="Círculo de fondo"
             />
             <BannerImageStyle
               src={jerson}
+              width={433}
+              height={586}
               custom="-100px"
+              alt="Jerson Ramírez"
+              title="Jerson Ramírez"
               variants={VerticalVariants}
             />
           </BannerImagesStyle>

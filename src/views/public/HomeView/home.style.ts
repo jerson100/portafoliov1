@@ -116,6 +116,7 @@ export const BannerImageStyle = styled(motion.img)`
   position: relative;
   width: 100%;
   max-width: 257px;
+  height: auto;
   ${breakpointFn("lg")`
     max-width: 500px;
   `}
@@ -132,5 +133,7 @@ export const BannerImagesStyle = styled(motion.div)`
   flex-grow: 1;
   position: relative;
   display: flex;
+  pointer-events: none;
+  user-select: none;
   justify-content: flex-end;
 `;

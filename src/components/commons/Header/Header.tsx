@@ -39,6 +39,7 @@ const Header = () => {
               linkComponent={Link}
               to="assets/pdf/cv.pdf"
               target="_blank"
+              title="Descargar Cv"
             >
               Descargar Cv
             </Button>

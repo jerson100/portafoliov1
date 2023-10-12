@@ -50,6 +50,7 @@ const ProjectsView = () => {
           <Button
             linkComponent={Link}
             to="https://github.com/jerson100"
+            title="Ver Más"
             target="_blank"
           >
             Ver Más

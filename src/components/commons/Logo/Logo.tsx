@@ -4,7 +4,7 @@ import Link from "../Link";
 
 const Logo = ({ tam = "normal", ...props }: LogoProps) => {
   return (
-    <Link to="/">
+    <Link to="/" title="Inicio">
       <LogoContainerStyle
         width="40"
         height="44"

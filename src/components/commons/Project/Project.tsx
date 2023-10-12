@@ -43,11 +43,16 @@ const Project = ({
         <Typography component="h1" variant="h4" aria-labelledby={_id}>
           {title}
         </Typography>
-        <Typography>2 Days</Typography>
+        <Typography>2 Días</Typography>
         <Typography>{description}</Typography>
 
         <ProjectButtonStyle>
-          <Button linkComponent={Link} to={linkApp} target="_blank">
+          <Button
+            linkComponent={Link}
+            to={linkApp}
+            target="_blank"
+            title="Ver Aplicativo"
+          >
             Ver Aplicativo
           </Button>
           <Button
@@ -56,8 +61,9 @@ const Project = ({
             linkComponent={Link}
             to={source}
             target="_blank"
+            title="Ver Código"
           >
-            Ver Detalles
+            Ver Código
           </Button>
         </ProjectButtonStyle>
       </ProjectInfoStyle>
