@@ -35,7 +35,7 @@ const Header = () => {
             variants={HeaderItemVariants}
           >
             <Button
-              variant="outlined"
+              variant="contained"
               linkComponent={Link}
               to="assets/pdf/cv.pdf"
               target="_blank"
